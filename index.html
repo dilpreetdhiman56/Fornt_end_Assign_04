@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football survey</title>
+</head>
+<body>
+    <form id="footballSurvey" action="https://httpbin.org/post" method="POST">
+        <h1>Ronaldo or Messi?</h1>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required /> 
+            <span id="nameError" class="error"></span>
+        
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+            <span id="emailError" class="error"></span>
+
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate" required />
+            <span id="birthdateError" class="error"></span>
+
+        
+        <fieldset>
+            <legend>Please select your favorite player:</legend>
+            <input type="radio" id="ronaldo" name="favoritePlayer" value="RONALDO">
+            <label for="ronaldo">RONALDO</label><br>
+            <input type="radio" id="messi" name="favoritePlayer" value="MESSI">
+            <label for="messi">MESSI</label><br>
+            <span id="favoritePlayerError" class="error"></span>
+        </fieldset>
+
+        <fieldset>
+            <legend>Who played with your favorite player:</legend>
+            <input type="checkbox" id="player1" name="teammates" value="neymar">
+            <label for="player1"> Neymar Junior</label><br>
+            <input type="checkbox" id="player2" name="teammates" value="modric">
+            <label for="player2"> Luka Modric</label><br>
+            <input type="checkbox" id="player3" name="teammates" value="benzema">
+            <label for="player3"> Karim Benzema</label><br>
+            <input type="checkbox" id="player4" name="teammates" value="suarez">
+            <label for="player4"> Luis Suarez</label><br>
+            <span id="teammatesError" class="error"></span>
+        </fieldset>
+        
+            <label for="choice">Who is Better?</label>
+            <select id="choice" name="choice" required>
+                <option value="">Please select your Favorite</option>
+                <option value="Ronaldo">Ronaldo</option>
+                <option value="Messi">Messi</option>
+                <option value="Other">Other one</option>
+                <option value="none">I don't watch Football</option>
+            </select>
+            <span id="choiceError" class="error"></span>
+
+            <label for="player">Second Favorite?</label>
+            <input type="text" id="player" name="player" pattern="^[a-zA-Z][a-zA-Z0-9_]{4,14}$" required />
+            <span id="playerError" class="error"></span>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="2"></textarea>
+            <span id="commentsError" class="error"></span>
+    
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html
