@@ -79,7 +79,7 @@ function isNotEmpty(value) {
       clearError('teammates');
     }
   
-    // Validate Who is Better (Dropdown)
+    // Validate Who is Better
     const choice = document.getElementById('choice').value;
     if (!isSelected(choice)) {
       showError('choice', 'Please select who is better.');
@@ -88,7 +88,7 @@ function isNotEmpty(value) {
       clearError('choice');
     }
   
-    // Validate Additional Comments (Textarea)
+    // Validate Additional Comments
     const comments = document.getElementById('comments').value;
     if (!isNotEmpty(comments)) {
       showError('comments', 'Please provide your additional comments.');
