@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #ffffff;
-    background-color: rgb(119, 119, 119);
+    background-color: rgb(84, 84, 81);
     padding: 40px;
     border-radius: 10px;
 }
@@ -86,6 +86,8 @@ button {
   button:active {
     box-shadow: 4px 4px 12px #c5c5c5, -4px -4px 12px #ffffff;
   }
+
+
 .error {
     color: #e74c3c;
     font-size: 0.9em;
