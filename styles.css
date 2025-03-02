@@ -68,7 +68,7 @@ input[type="checkbox"] {
 
 button {
     color: #090909;
-    padding: 0.7em 14.5em;
+    padding: 0.7em 3.0em;
     margin-top: 1.3em;
     font-size: 18px;
     border-radius: 0.5em;
@@ -121,15 +121,8 @@ textarea:focus {
     textarea {
         font-size: 14px;
     }
-}
 
-/* Accessibility improvements */
-@media (prefers-reduced-motion: reduce) {
-    * {
-        transition: none !important;
-    }
 }
-
 input[type="checkbox"] {
     display: inline-block;
     vertical-align: middle;
@@ -140,3 +133,4 @@ label {
     display: inline-block;
     vertical-align: middle;
 }
+
