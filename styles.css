@@ -4,6 +4,7 @@ body {
     color: #ffffff;
     background-color: rgb(119, 119, 119);
     padding: 40px;
+    border-radius: 10px;
 }
 
 #footballSurvey {
