@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>Football survey</title>
 </head>
 <body>
@@ -53,12 +54,8 @@
             </select>
             <span id="choiceError" class="error"></span>
 
-            <label for="player">Second Favorite?</label>
-            <input type="text" id="player" name="player" pattern="^[a-zA-Z][a-zA-Z0-9_]{4,14}$" required />
-            <span id="playerError" class="error"></span>
-
             <label for="comments">Additional Comments:</label>
-            <textarea id="comments" name="comments" rows="2"></textarea>
+            <textarea id="comments" name="comments" rows="1"></textarea>
             <span id="commentsError" class="error"></span>
     
         <button type="submit">Register</button>
